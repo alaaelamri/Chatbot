@@ -1,0 +1,86 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - account
+  - transfer
+  - cardphotoid
+  - cardblocked
+  - adresschange
+  - telephone
+  - invest
+  - cheque
+  - card 
+  - void
+  - death
+  - Accidental 
+  - family
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  
+  utter_iamabot:
+  - text: "I am a bot, powered by FortyOne."
+
+  utter_account:
+  - text: "Following documents are required to open a Current Account of a sole proprietorship entity: Proof of existence in the name of firm Proof of address in the name of firm KYC of the proprietor Any two of the below listed documents shall be obtained for establishing proof of existence. Registration certificate/license issued by Municipal authorities such as Shop & Establishment Certificate/Trade License CST/VAT/Service Tax Certificate or Letter Of Registration for CST/VAT/Service Tax Certificate/Registration document issued by Professional Tax authorities Valid Business License or Certificate Of Registration issued by State/Central Government authority (validity would include the grace period for renewal as mentioned in the certificate) RBI/SEBI Registration Certificate License issued by Food and Drug Control Authorities Import - Export certificate (IEC Code) issued by the Director General of Foreign Trade Documents for establishing proof of address Landline telephone bill/electricity bill of public & approved private operators in the state. (Bills not to be older than 4 months from the date of account opening) Property Ownership Deed i.e. title deeds of the property in the name of the firm duly stamped and registered TAN Allotment Letter issued in the name of the firm Latest property tax or water tax paid receipt/bill raised in the name of the firm Existing bank account statement or passbook of a PSU/private sector/foreign bank. Statement not older than 4 months from the date of account opening to be accepted ** This is only indicative list. Please visit your nearest branch for details View more"
+
+  utter_transfer:
+  - text: "Yes, current accounts can be transferred from one branch to another. however, there are certain restrictions. please visit your nearest branch for details."
+  
+  utter_cardphotoid:
+  - text: "No, a company id cannot be accepted as a photo id document. a government issued photo id card is mandatory."
+  
+  utter_cardblocked:
+  - text: "Please note that if you enter an incorrect pin three times in the atm, your access gets blocked for security reasons. it gets activated after 24 hours. kindly use your debit / atm card at the atm after 24 hours with the same pin available with you. if your account still remains inaccessible, please apply for new pin. you can apply for regeneration of your atm / debit pin in following ways: fill-up the new pin application form and submit it at any of our branches. on receipt of the form and successful verification, we will process a new atm pin and send it to your mailing address, as registered in our records. submit a request at phonebanking, after validation with your telephone identification number (tin). for every pin regeneration request, charges of rs. 50 + service tax + educational cess is applicable."
+  
+  utter_adresschange:
+  - text: "Your mailing address will be updated within 7 working days once the application, with any supporting documents, is received and found to be in order. the change in address will also be confirmed through system generated mailers sent to the old as well as the new addresses. if you do not receive any update after the stipulated time mentioned above, we request you to contact us with the following details in order to enable us to assist you further: the date when you submitted your request the complete branch address where the request was submitted. click here to see details of all our bank branches the name of the executive and complete address of the executives source branch, if the form is handed over to an executive"
+
+  utter_telephone:
+  - text: "Yes you can. You can use PhoneBanking to perform the following operations: Access your account details Request account statements Make Fixed Deposit related queries Inquire about interest and FX rates Request a cash delivery or pick-up Order a new cheque book View more"
+
+  utter_invest:
+  - text: "There is no limit on maximum amount that you can invest in this plan, subject to underwriting, and you can choose a policy term of 10 years or 15 to 25 years under this plan."
+
+  utter_cheque:
+  - text: "Yes. When you open an account, you will be issued an at-par cheque book, which is payable at all our branches."
+
+  utter_card :
+  - text: "Depending on the balance in your account, it is possible to withdraw up to Rs. 10dt at the ATM daily, and spend Rs. 20 dt daily. These limits have been set for your card security."
+
+  utter_void:
+  - text: "Just fax us a copy of the void transaction slip. You can send it to one of our PhoneBanking numbers or your nearest Bank branch."
+
+  utter_death:
+  - text: "Nominees and legal heirs should visit their nearest Bank branch. We will help with the documents required, and, when these are complete, we will liaise with the relevant insurance company to resolve the claim. This is a special service for our EasyShop Gold Debit Card holders. Remember to provide us with all documents within one month of death."
+
+  utter_Accidental:
+  - text: "This policy only covers accidental death."
+
+  utter_family:
+  - text: "You can cover your family members as given below in a single Policy on Individual Sum Insured basis. Brother, Sister, Grand Son, Grand Daughter, Daughter in Law, Son in Law, Nephew, Niece, Grand Mother and Grand Father."
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

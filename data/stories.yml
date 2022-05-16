@@ -1,0 +1,147 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: account path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: account
+  - action: utter_account
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: transfer path
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: transfer
+  - action: utter_transfer
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: cardphotoid path
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: cardphotoid
+  - action: utter_cardphotoid
+  - intent: goodbye
+  - action: utter_goodbye
+   
+- story: cardblocked path
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: cardblocked
+  - action: utter_cardblocked
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: adressChange path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: adresschange
+  - action: utter_adresschange
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: telephone path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telephone
+  - action: utter_telephone
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: invest path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: invest
+  - action: utter_invest
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: cheque path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cheque
+  - action: utter_cheque
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: card path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: card
+  - action: utter_card
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: void path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: void
+  - action: utter_void
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: death path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: death
+  - action: utter_death
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Accidental path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Accidental
+  - action: utter_Accidental
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: family path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: family
+  - action: utter_family
+  - intent: goodbye
+  - action: utter_goodbye

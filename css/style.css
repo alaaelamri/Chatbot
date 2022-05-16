@@ -1,0 +1,11 @@
+.bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+    background-position: center center;
+}
+.intro {
+    height: 100vh;
+    position: relative;
+    color: rgb(110, 105, 105);
+  }

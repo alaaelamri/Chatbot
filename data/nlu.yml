@@ -1,0 +1,170 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: account
+  examples: |
+    - What are the documents required for opening an account of a sole proprietorship firm?
+    - documents?
+    - what are the documents?
+
+- intent: transfer
+  examples: |
+    - Can i transfer my current from one branch to another?
+    - Transfer from account to account?
+    - can i transfer from an account to another?
+    
+- intent: cardphotoid
+  examples: |
+    - Can a company id card be accepted as a photo id document?
+    - photo id ?
+    - company id?
+    
+- intent: cardblocked
+  examples: |
+    - What is the procedure to follow if my debit card pin is blocked? 
+    - procedure ?
+    - what is the procedure?
+    
+- intent: adresschange
+  examples: |
+    - How long will it take to update a change of address?
+    - time ?
+    - change address?
+
+- intent: telephone
+  examples: |
+    - Can I access my account by telephone to conduct routine daily transactions?
+    - Can I access my account by phone for daily transactions?
+    - daily transactions by phone?
+
+- intent: invest
+  examples: |
+    - What is the maximum amount I can invest?
+    - For how many years can I stay invested in this plan?
+    - invest?
+
+- intent: cheque
+  examples: |
+    - Can i make payments to my suppliers Bank branches through a single cheque book?
+    - Can i pay with cheque ?
+    - cheque payment?
+
+- intent: card
+  examples: |
+    - Are there transaction limits for Platinum Debit Card?
+    - card transaction?
+    - limits of card transaction?
+
+- intent: void
+  examples: |
+    - What should I do in the case of a void transaction?
+    - void transaction?
+    - What should I do in the case of a void transaction for Gold Debit Card?  
+
+- intent: death
+  examples: |
+    - How do I claim Personal Accident Death Cover for Gold Debit Card?
+    - death?
+    - What should I do in the case of a death?  
+
+- intent: Accidental
+  examples: |
+    - Does this the Revive Policy for Personal Accident cover natural death and daily sickness?
+    - Does the Accidental Protection Plan - Hospital Cash policy cover natural death and daily sickness as well?
+    - Does this policy cover natural death and daily sickness also?
+
+- intent: family
+  examples: |
+    - Can I cover my family members in this policy?
+    - cover family?
+    - family?
+  
